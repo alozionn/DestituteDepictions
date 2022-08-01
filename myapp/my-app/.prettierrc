@@ -1,0 +1,14 @@
+{
+    "1import-comment1": "these lines need -> npm install prettier @trivago/prettier-plugin-sort-imports --save-dev",
+    "importOrder": ["^components/(.*)$", "^[./]" ],
+    "importOrderSeparation": true, 
+    "importOrderSortSpecifiers": true,
+    "2import-comment2": "these lines need -> npm install prettier @trivago/prettier-plugin-sort-imports --save-dev",
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100,
+    "bracketSpacing": true,
+    "endOfLine": "auto"
+}

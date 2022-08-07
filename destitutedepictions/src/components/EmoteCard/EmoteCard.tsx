@@ -1,4 +1,5 @@
-import { Badge, Box, Image, Toast, useToast } from '@chakra-ui/react'
+import { Badge, Box, Image, useToast } from '@chakra-ui/react'
+import { writeText } from '@tauri-apps/api/clipboard'
 
 import { Emote } from '../../types/emotes'
 
@@ -9,8 +10,7 @@ export const EmoteCard = ({ data }: EmoteCardProps) => {
     const copyToast = useToast()
 
     const copyEmote = async () => {
-        //@ts-ignore because TS bitches about it
-        await Neutralino.clipboard.writeText(data.url)
+        await writeText(data.url)
 
         copyToast({
             title: 'Emote copied',
@@ -40,6 +40,7 @@ export const EmoteCard = ({ data }: EmoteCardProps) => {
                 <Image src={data.url} alt={data?.alt} />
             </Box>
             <Box
+                textAlign="center"
                 mt="2"
                 fontWeight="semibold"
                 as="h4"

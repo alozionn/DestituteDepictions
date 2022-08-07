@@ -16,7 +16,8 @@
       "height": 500,
       "minWidth": 400,
       "minHeight": 200,
-      "icon": "/my-app/public/logo192.png"
+      "icon": "/my-app/public/logo192.png",
+      "borderless": true
     }
   },
   "cli": {
@@ -30,5 +31,12 @@
       "patchFile": "/my-app/public/index.html",
       "devUrl": "http://localhost:3000"
     }
-  }
+  },
+  "maybe-enableExtensions": true,
+  "maybe-extensions": [
+    {
+      "id": "js.neutralino.ddserver",
+      "command": "node ${NL_PATH}/extensions/binary/main.js"
+    }
+  ]
 }

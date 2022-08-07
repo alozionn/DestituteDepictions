@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 
 import './App.css'
-import { Container, EmoteList, SearchBar } from './components'
+import { Container, EmoteList, FloatingActionButton, SearchBar } from './components'
 
 function App() {
     return (
@@ -10,6 +10,7 @@ function App() {
                 <Container>
                     <SearchBar />
                     <EmoteList />
+                    <FloatingActionButton />
                 </Container>
             </div>
         </ChakraProvider>

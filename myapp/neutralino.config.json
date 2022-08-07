@@ -7,7 +7,7 @@
   "enableServer": true,
   "enableNativeAPI": true,
   "nativeAllowList": [
-    "app.*"
+    "app.*", "clipboard.writeText"
   ],
   "modes": {
     "window": {

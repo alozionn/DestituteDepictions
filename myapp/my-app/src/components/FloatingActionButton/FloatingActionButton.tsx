@@ -1,5 +1,5 @@
 import { AddIcon, EditIcon, ExternalLinkIcon, RepeatIcon } from '@chakra-ui/icons'
-import { Box, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
+import { Box, IconButton, Kbd, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
 
 export const FloatingActionButton = () => {
     // return <IconButton icon={<AddIcon/>}/>
@@ -16,20 +16,16 @@ export const FloatingActionButton = () => {
                     icon={<AddIcon />}
                     variant="solid"
                     colorScheme="teal"
+                    borderRadius="100%"
+                    boxShadow="xl"
                 />
                 <MenuList>
-                    <MenuItem icon={<AddIcon />} command="CTRL+N / ⌘N">
-                        Add Emoticon
+                    <MenuItem icon={<AddIcon />}>
+                        Add Emoticon &nbsp;
+                        <span>
+                            <Kbd>ctrl + N</Kbd> / <Kbd>⌘N</Kbd>
+                        </span>
                     </MenuItem>
-                    {/* <MenuItem icon={<ExternalLinkIcon />} command="⌘N">
-                        New Window
-                    </MenuItem>
-                    <MenuItem icon={<RepeatIcon />} command="⌘⇧N">
-                        Open Closed Tab
-                    </MenuItem>
-                    <MenuItem icon={<EditIcon />} command="⌘O">
-                        Open File...
-                    </MenuItem> */}
                 </MenuList>
             </Menu>
         </Box>

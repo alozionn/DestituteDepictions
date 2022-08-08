@@ -1,7 +1,7 @@
 import { Badge, Box, Image, useToast } from '@chakra-ui/react'
 import { writeText } from '@tauri-apps/api/clipboard'
 
-import { Emote } from '../../types/emotes'
+import { Emote } from '../../interfaces/emote'
 
 interface EmoteCardProps {
     data: Emote

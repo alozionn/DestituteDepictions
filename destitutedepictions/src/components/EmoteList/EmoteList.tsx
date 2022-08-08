@@ -1,16 +1,15 @@
 import { SimpleGrid } from '@chakra-ui/react'
 
-import { Emote } from '../../types/emotes'
+import { Emote } from '../../interfaces/emote'
+import { useEmotesStore } from '../../stores/emotes.store'
 import { EmoteCard } from '../EmoteCard/EmoteCard'
 
-interface EmoteListProps {
-    emoteList: Emote[]
-}
+export const EmoteList = () => {
+    const emotes = useEmotesStore((state) => state.emotes)
 
-export const EmoteList = ({ emoteList }: EmoteListProps) => {
     return (
         <SimpleGrid columns={{ sm: 4, md: 6, lg: 8, xl: 12 }} spacing={2} autoFlow="row dense">
-            {emoteList.map((emote, index) => {
+            {emotes.map((emote, index) => {
                 return <EmoteCard key={index} data={emote} />
             })}
         </SimpleGrid>

@@ -4,7 +4,6 @@ import React, { useCallback, useState } from 'react'
 
 import { useEmotesStore } from '../../stores/emotes.store'
 import { BTTV_API_CALLS } from '../../utils/api/bttv.api'
-import { EXAMPLE_EMOTE } from '../../utils/constants'
 import { IMAGE_NORMALIZE } from '../../utils/image-normalize'
 
 export const SearchBar = () => {
@@ -15,13 +14,12 @@ export const SearchBar = () => {
         async (event: React.KeyboardEvent) => {
             if (event.key === 'Enter') {
                 const emotes = await BTTV_API_CALLS.getSharedByQuery(searchString).get('')
-                if (emotes.status === 200) console.log(emotes.data)
+
+                if (emotes.status !== 200) return
 
                 const normalizedEmotes = IMAGE_NORMALIZE.bttv(emotes.data)
-                console.log(normalizedEmotes)
 
                 setEmotes(normalizedEmotes)
-                // setEmotes([EXAMPLE_EMOTE])
             }
         },
         [searchString]

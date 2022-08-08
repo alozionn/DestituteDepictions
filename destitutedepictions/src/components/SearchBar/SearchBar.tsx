@@ -12,6 +12,7 @@ export const SearchBar = () => {
 
     const handleTyping = useCallback(
         async (event: React.KeyboardEvent) => {
+            //TODO: if no API is selected, request from all three
             if (event.key === 'Enter') {
                 const emotes = await BTTV_API_CALLS.getSharedByQuery(searchString).get('')
 

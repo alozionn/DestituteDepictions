@@ -1,5 +1,5 @@
 use crate::schema::images;
-use serde::{Serialize, Deserialize}
+use serde::{Deserialize, Serialize};
 
 #[derive(Queryable, Serialize)]
 pub struct Image {
@@ -8,7 +8,8 @@ pub struct Image {
     pub url: String,
     pub size: String,
     pub alt: String,
-    pub image_bin: Binary,
+    // pub image_bin: Binary,
+    pub image_bin: u64,
 }
 
 #[derive(Insertable, Serialize)]

@@ -1,34 +1,13 @@
-// #[macro_use]
-// extern crate diesel;
-// extern crate dotenv;
-
-// use diesel::pg::PgConnection;
-// use diesel::prelude::*;
-// use dotenv::dotenv;
-// use std::env;
-
-// pub mod models;
-// pub mod schema;
-
-// pub fn establish_connection() -> PgConnection {
-//     dotenv().ok();
-
-//     let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
-//     PgConnection::establish(&database_url).expect(&format!("Error connecting to {}", database_url))
-// }
-#[macro_use]
-extern crate diesel;
-
 extern crate dotenv;
 
 pub mod models;
-pub mod schema;
-// use crate::schema::*;
+// pub mod schema;
+use crate::schema::*;
 use diesel::prelude::*;
 use dotenv::dotenv;
 use std::env;
 
-use models::NewImage;
+use models::{Image, NewImage};
 
 pub fn establish_connection() -> SqliteConnection {
     // creates a new connection to the DB and returns reference
@@ -46,7 +25,7 @@ pub fn create_image(
     size: &str,
     alt: &str,
 ) -> usize {
-    use schema::images;
+    // use schema::images;
 
     let new_image = NewImage {
         name,
@@ -60,3 +39,20 @@ pub fn create_image(
         .execute(conn)
         .expect("Error saving new image")
 }
+
+pub fn get_images(conn: &SqliteConnection) {
+    // let images = images::dsl::images
+    //     .load::<Image>(conn)
+    //     .expect("Loading images");
+    // let other_images = images.select("")
+    // images
+    println!("let's GOOOOO");
+}
+
+// pub fn todos_list(conn: &SqliteConnection) -> String {
+//     let all_todos = todos::dsl::todos
+//         .load::<Todo>(conn)
+//         .expect("Expect loading posts");
+//     let serialized = serde_json::to_string(&all_todos).unwrap();
+//     serialized
+// }

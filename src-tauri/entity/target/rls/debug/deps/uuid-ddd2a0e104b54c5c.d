@@ -1,0 +1,14 @@
+d:\Programming\DestituteDepictions\src-tauri\entity\target\rls\debug\deps\uuid-ddd2a0e104b54c5c.rmeta: C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\lib.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\builder.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\error.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\parser.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\fmt.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\v4.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\rng.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\external\mod.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\external\serde_support.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\macros.rs
+
+d:\Programming\DestituteDepictions\src-tauri\entity\target\rls\debug\deps\uuid-ddd2a0e104b54c5c.d: C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\lib.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\builder.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\error.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\parser.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\fmt.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\v4.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\rng.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\external\mod.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\external\serde_support.rs C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\macros.rs
+
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\lib.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\builder.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\error.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\parser.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\fmt.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\v4.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\rng.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\external\mod.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\external\serde_support.rs:
+C:\Users\Andrei\.cargo\registry\src\github.com-1ecc6299db9ec823\uuid-1.1.2\src\macros.rs:
